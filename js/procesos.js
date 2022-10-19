@@ -40,7 +40,7 @@ function init(){
 
         request.onupgradeneeded = function(e){
             db=e.target.result;
-            db.createobjectStore("Carro", {keyPath: "DUI"});
+            db.createObjectStore("Carro", {keyPath: "DUI"});
         }
         var today = new Date();
         var dia = today.getDate();
