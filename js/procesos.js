@@ -179,7 +179,7 @@ function mostrar(){
 
     cursor.addEventListener("success", mostrarDatos, false);
 }
-
+//FUNCIONES PARA ACTUALIZACION DE OPCIONES
 function removeOptions(optionMenu){
     for(i=0; i<optionMenu.options.length; i++){
         optionMenu.options[i] = null;
@@ -193,7 +193,9 @@ function addOptions(optionList, optionMenu){
         optionMenu[i] = new Option(optionList[i], optionList[i]);
     }
 }
+//FIN ACTUALIZACION DE OPCIONES
 
+//MUESTRA DE DATOS
 function mostrarDatos(e){
     var cursor = e.target.result;
 
