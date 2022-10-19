@@ -198,7 +198,7 @@ function mostrarDatos(e){
     var cursor = e.target.result;
 
     if(cursor){
-        tabla.innerHTML += "<div class='tablaMostrar'> Nombre:" + cursor.value.nombre +"  - DUI:"+ cursor.value.DUI + " - NIT:" + cursor.value.NIT + " - Marca:" + cursor.value.Marca +" - Modelo:"+cursor.value.Modelo+" - Año:"+cursor.value.Anio+" - Color:"+cursor.value.Color+" - Placa:"+cursor.value.Placa+" - Fallas:"+cursor.value.Falla+" - "+cursor.value.Fecha+"</div>";
+        tabla.innerHTML += "<div class='tablaMostrar'> Nombre: " + cursor.value.nombre +"  - DUI: "+ cursor.value.DUI + " - NIT: " + cursor.value.NIT + " - Marca: " + cursor.value.Marca +" - Modelo: "+cursor.value.Modelo+" - Año: "+cursor.value.Anio+" - Color: "+cursor.value.Color+" - Placa: "+cursor.value.Placa+" - Fallas: "+cursor.value.Falla+" - Fecha: "+cursor.value.Fecha+"</div><br><br>";
         // tabla.innerHTML += "<table class=\"carinfo\">\n";
         // tabla.innerHTML += "<thead>\n\t<tr>\n";
         // tabla.innerHTML += "\t\t<th colspan=\"2\">Datos del carro</th>\n";
