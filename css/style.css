@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+.tittle{
+    position: relative;
+}
+.pattern {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+opacity: 1;
+background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 17.5px 17.5px, linear-gradient(#00769d 1.4000000000000001px, transparent 1.4000000000000001px) 0 -0.7000000000000001px, linear-gradient(90deg, #00769d 1.4000000000000001px, #ffffff 1.4000000000000001px) -0.7000000000000001px 0;
+background-size: 35px 35px, 35px 35px, 17.5px 17.5px, 17.5px 17.5px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.form-bg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+}
+.separador{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+.separador label{
+    font-weight: bold;
+}
+.separador input{
+    padding: 5px;
+    cursor: pointer;
+}
+.separador select{
+    padding: 5px;
+    cursor: pointer;
+}
+#falla{
+    width: 600px;
+    height: 100px;
+}
+label textarea{
+    vertical-align: middle;
+}
+#nombre{
+    width: 200px;
+}
+#dui{
+    width: 110px;
+}
+#nit{
+    width: 180px;
+}
+#placa{
+    width: 85px;
+}
+#txtAnio{
+    width: 40px;
+}
+#enviar{
+    background-color: whitesmoke;
+    color: crimson;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+#enviar:hover{
+    color: whitesmoke;
+    background-color: crimson;
+}
+
+.bloque1{
+    width: 80%;
+    margin: auto;
+}
+.bloque2{
+    width: 90%;
+    margin: auto;
+}
+.bloque3{
+    width: 60%;
+    margin: auto;
+    
+}
+#Tabla{
+    position: relative;
+    background-color: black;
+    color: #ffffff;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.tablaMostrar{
+    background-color: #ffffff;
+    color: black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}

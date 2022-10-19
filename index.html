@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/procesos.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Taller Practico 3</title>
+</head>
+<body >
+    <div class='pattern'></div>
+    <div class="container">
+        <br><h1 class="tittle">Registro de automoviles</h1><br>
+    <div class="form-bg">
+    <form id="fomrControl" name="fomrControl" class="form">
+        <div class="bloque1">
+        <div class="separador">
+        <label for="nombre">Nombre Completo: </label>
+        <input type="text" name="nombre" placeholder="Marvin Ernesto Iglesias Lara" id="nombre">
+        </div>
+        <div class="separador">
+        <label for="dui">DUI: </label>
+        <input type="text" name="dui" placeholder="########-#" id="dui">
+    </div>
+        <div class="separador">
+        <label for="nit">NIT: </label>
+        <input type="text" name="nit" placeholder="####-######-###-#"  id="nit">
+    </div></div><br>
+    <div class="bloque2">
+        <div class="separador">
+        <label for="carro" name="carro" onchange="addOptions();">Automóvil: </label>
+        <select name="selectCarro" id="selectCarro" onchange="selectC();">
+            <option value="Toyota">Toyota</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Volkswagen">Volkswagen</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Honda">Honda</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+    </select>
+</div>
+    <div class="separador">
+    <label for="selectModelo" name="modelo">Modelo: </label>
+    <select name="selmod" id="selmod" onchange="selectM();">
+        <option value="Corolla">Corolla</option>
+        <option value="Echo">Echo</option>
+        <option value="Yaris">Yaris</option>
+        <option value="Avensis">Avensis</option>
+        <option value="Camry">Camry</option>
+        <option value="Land Cruiser">Land Cruiser</option>
+        <option value="4 Runner">4 Runner</option>
+        <option value="Hilux">Hilux</option>
+    </select>
+</div>
+    <div class="separador">
+    <label for="txtAnio">Año: </label>
+    <input type="number" min="1950" max="2022" name="txtAnio" placeholder="2011" maxlength="4" id="txtAnio" required/>
+    <label for="selectColores" name="morelo">Color: </label>
+    <select name="selectColores" id="selectColores" onchange="selectColor();">
+        <option value="Azul">Azul</option>
+        <option value="Negro">Negro</option>
+        <option value="Blanco">Blanco</option>
+        <option value="Gris">Gris</option>
+        <option value="Beige">Beige</option>
+        <option value="Rojo">Rojo</option>
+    </select>
+</div>
+    <div class="separador">
+    <label for="placa">Placa: </label>
+    <input type="textarea" name="placa" placeholder="P###-###" id="placa">
+</div></div><br>
+<div class="bloque3">
+    <div class="separador">
+    <label for="falla">Fallas: 
+    <textarea name="falla" placeholder="Escriba las fallas del automovil aqui" id="falla"></textarea></label>
+</div></div>
+<div class="bloque3">
+    <div class="separador">
+    <label for="fecha" min="1950" max="2022" id="fecha">Fecha: </label>
+</div></div><br>
+<div class="separador">
+<input type="button" name="btnEnviar" value="Enviar" id="enviar"/>
+</div>
+    </form>
+</div>
+</div>
+    <section id="Tabla">
+        <p>Registro</p>
+    </section>
+</body>
+</html>
