@@ -179,7 +179,7 @@ function mostrar(){
 
     cursor.addEventListener("success", mostrarDatos, false);
 }
-//FUNCIONES PARA ACTUALIZACION DE OPCIONES
+
 function removeOptions(optionMenu){
     for(i=0; i<optionMenu.options.length; i++){
         optionMenu.options[i] = null;
@@ -193,14 +193,12 @@ function addOptions(optionList, optionMenu){
         optionMenu[i] = new Option(optionList[i], optionList[i]);
     }
 }
-//FIN ACTUALIZACION DE OPCIONES
 
-//MUESTRA DE DATOS
 function mostrarDatos(e){
     var cursor = e.target.result;
 
     if(cursor){
-        tabla.innerHTML += "<div class='tablaMostrar'> Nombre: " + cursor.value.nombre +"  - DUI: "+ cursor.value.DUI + " - NIT: " + cursor.value.NIT + " - Marca: " + cursor.value.Marca +" - Modelo: "+cursor.value.Modelo+" - Año: "+cursor.value.Anio+" - Color: "+cursor.value.Color+" - Placa: "+cursor.value.Placa+" - Fallas: "+cursor.value.Falla+" - Fecha: "+cursor.value.Fecha+"</div><br><br>";
+        tabla.innerHTML += "<div class='tablaMostrar'> Nombre:" + cursor.value.nombre +"  - DUI:"+ cursor.value.DUI + " - NIT:" + cursor.value.NIT + " - Marca:" + cursor.value.Marca +" - Modelo:"+cursor.value.Modelo+" - Año:"+cursor.value.Anio+" - Color:"+cursor.value.Color+" - Placa:"+cursor.value.Placa+" - Fallas:"+cursor.value.Falla+" - "+cursor.value.Fecha+"</div>";
         // tabla.innerHTML += "<table class=\"carinfo\">\n";
         // tabla.innerHTML += "<thead>\n\t<tr>\n";
         // tabla.innerHTML += "\t\t<th colspan=\"2\">Datos del carro</th>\n";
